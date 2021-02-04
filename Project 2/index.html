@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+    <body>
+        <h1 id="title">Dunder Mifflin Survey Form</h1>
+
+<section id="content">
+  
+  <p id="description">Survey of employees of Dunder Mifflin inc., Scranton, PA</p>
+  
+  <form id="survey-form">
+    
+    <div class="row">
+     <div class="label">
+      <label for="name">Name: </label>
+     </div>
+     <div class="input">
+       <input id="name" type="text" class="input-fields" placeholder="Enter Your Name" required>
+     </div>
+    </div> 
+    
+    <div class="row">
+      <div class="label">
+       <label for="email">Email: </label>
+      </div>
+      <div class="input">
+        <input id="email" type="e-mail" class="input-fields" placeholder="Enter Your Email" required>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="label">
+        <label for="age">Age: </label>
+      </div>
+      <div class="input">
+        <input id="age" type="number" min="18"
+      max="60" class="input-fields" placeholder="Enter Your Age">
+      </div> 
+     </div> 
+   
+    <div class="row">
+     <div id="Fac_Lab"class="label">
+       <label for="Facilities_Feedback"> What do You think Needs Improvement at Dunder? : </label>
+     </div>
+     <div class="input">
+       <ul id="Facilities_Feedback" style="list-style-type: none;">
+         <li><label><input  type="checkbox" value="1" name="improv">Water Filter</label>            </li> 
+         <li><label><input type="checkbox" value="2" name="improv">Coffe Machine</label>          </li>
+         <li><label><input type="checkbox" name="improv" value="3">Snacks Vendy</label>            </li>
+         <li><label><input type="checkbox" name="improv" value="4">Photo Copier</label>            </li>
+         <li><label><input type="checkbox" name="improv" value="5">Lights</label>                  </li>
+       </ul>  
+     </div>
+    </div> 
+     <div class="row">
+      <div class="label">
+        <label for="Vote">Who should be employee of the Year: </label>
+      </div>
+      <div class="input">
+        <select id="Vote" name="eotm">
+          <option disabled value>Select A Name</option>
+          <option value="Pam">Pam</option>
+          <option value="John">Josh</option>
+          <option value="Dwigt">Dwight</option>
+          <option value="Stan">Stanley</option>
+          <option value="BJ">Ryan</option>
+        </select>  
+      </div>
+    </div> 
+  <div class="row">
+      <div class="label">
+        <label for"poll">Should We Move To Fresno: </label>
+      </div>
+      <div class="input">
+        <ul id="poll" style="list-style: none;">
+          <li><label><input type="radio" name="moving" value="y">Yes</label></li>
+          <li><label><input type="radio" name="moving" value="n">No</label></li>
+        </ul>  
+      </div>
+    </div>  
+  </form>
+ 
+</section>
+    </body>
+</html>
